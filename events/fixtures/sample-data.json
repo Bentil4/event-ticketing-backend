@@ -1,0 +1,45 @@
+[
+    {
+        "model": "events.event",
+        "pk": 1,
+        "fields": {
+            "name": "Afro Nation Concert",
+            "date": "2025-06-01T18:00:00Z",
+            "location": "Accra Sports Stadium"
+        }
+    },
+    {
+        "model": "events.ticketcategory",
+        "pk": 1,
+        "fields": {
+            "event": 1,
+            "name": "Regular",
+            "price": "20.00"
+        }
+    },
+    {
+        "model": "events.ticketcategory",
+        "pk": 2,
+        "fields": {
+            "event": 1,
+            "name": "VIP",
+            "price": "60.00"
+        }
+    },
+    {
+        "model": "events.promocode",
+        "pk": 1,
+        "fields": {
+            "code": "AFRO10",
+            "discount_percentage": 10
+        }
+    },
+    {
+        "model": "events.promocode",
+        "pk": 2,
+        "fields": {
+            "code": "VIPPASS",
+            "discount_percentage": 25
+        }
+    }
+]

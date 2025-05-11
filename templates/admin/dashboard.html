@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<h1>📊 Ticketing Dashboard</h1>
+
+<div style="display: flex; gap: 2rem;">
+    <div>
+        <h3>Revenue</h3>
+        <p><strong>GH¢{{ revenue }}</strong></p>
+    </div>
+    <div>
+        <h3>Orders</h3>
+        <p>Total: {{ order_stats.total_orders }}</p>
+        <p>Paid: {{ order_stats.total_paid }}</p>
+    </div>
+    <div>
+        <h3>Tickets</h3>
+        <p>Total: {{ ticket_stats.total }}</p>
+        <p>Validated: {{ ticket_stats.validated }}</p>
+        <p>Transferred: {{ ticket_stats.transferred }}</p>
+    </div>
+</div>
+{% endblock %}
